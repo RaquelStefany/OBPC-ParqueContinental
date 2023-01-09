@@ -1,0 +1,64 @@
+footer{
+    padding: 4em 3em;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .logo{
+    width: 30%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .logo img{
+    width: 50%;
+}
+
+footer .logo h1{
+    font-size: large;
+    color: white;
+}
+
+footer .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    color: white;
+}
+
+footer .menu div{
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+footer .menu div a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+    footer .logo{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    footer{
+        padding: 4em 1em;
+    }
+
+    footer .logo img{
+        width: 80%;
+    }
+
+    footer .logo h1{
+        font-size: small;
+    }
+
+    footer .menu{
+        width: 40%;
+    }
+}

@@ -1,0 +1,182 @@
+.bgL{
+    background-image: url(../assets/img/Localidade.png);
+    background-size: cover;
+    padding: 6em;
+}
+
+.bgL .area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/img/fundoLocal.png);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.bgL .area > div{
+    padding: 4em;
+    background-color: rgba(255, 255, 255, 0.450);
+    width: 100%;
+}
+
+.bgL .area .dados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/* .bgL .area .dados > div{
+} */
+
+.bgL .area h1{
+    margin-bottom: 0.2em;
+    font-size: 40px;
+}
+
+.bgL .area h3{
+    font-weight: 600;
+    color: cornflowerblue;
+    margin-bottom: 2em;
+}
+
+.bgL .area .dados > div h4{
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+}
+
+.bgL .area .dados > div p{
+    margin-bottom: 1em;
+}
+
+.bgL .area .dados #foto{
+    width: 40%;
+    text-align: center;
+    margin-top: -8em;
+}
+
+.bgL .area .dados #foto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 5px solid black;
+    margin-bottom: 3em;
+}
+
+.bgL .area .dados #foto .btn{
+    border: 1px solid cornflowerblue;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 0px 0px 20px 0px cornflowerblue;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    margin-top: 1em;
+}
+
+.bgL .area .dados #foto .btn:hover{
+    padding: 0.5em 2em;
+    background-color: rgb(49, 120, 252);
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+@media only screen and (max-width: 1000px){
+    .bgL .area .dados{
+        display: grid;
+    }
+
+    .bgL .area .dados #foto{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    
+    .bgL .area h1{
+        font-size: 46px;
+    }
+
+    .bgL .area h3{
+        font-size: 30px;
+    }
+
+    .bgL .area .dados > div #mb{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5em;
+    }
+
+    .bgL .area .dados > div h4{
+        font-size: 24px;
+    }
+
+    .bgL .area .dados > div p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .bgL{
+        padding: 3em 2em;
+    }
+
+    .bgL .area > div{
+        padding: 2em;
+    }
+
+    .bgL .area .dados #foto img{
+        height: 200px;
+    }
+    
+    .bgL .area .dados #foto .btn{
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    .bgL .area h1{
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .bgL .area h3{
+        font-size: 20px;
+    }
+
+    .bgL .area .dados > div #mb{
+        margin-right: 2em;
+    }
+
+    .bgL .area .dados > div h4{
+        font-size: 20px;
+    }
+
+    .bgL .area .dados > div p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .bgL{
+        padding: 2em 1em;
+    }
+
+    .bgL .area .dados > div #mb{
+        margin-right: 1em;
+    }
+}

@@ -1,0 +1,197 @@
+.bgI{
+    background-image: linear-gradient(to left, white 55%,black 45%);
+    height: 100vh;
+    display: grid;
+}
+
+.bgI .area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgI .area .foto{
+    display: flex;
+    justify-content: flex-start;
+    margin-inline-start: 2em;
+    width: 60%;
+    align-items: center;
+}
+
+.bgI .foto img{
+    width: 85%;
+    height: 600px;
+    object-fit: cover;
+    border: 5px solid white;
+    margin: 1em;
+}
+
+.bgI .foto h3{
+    color: white;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 3em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 10px;
+    font-size: 24px;
+}
+
+.bgI .texto{
+    width: 40%;
+    text-align: center;
+    margin-inline-end: 2em;
+}
+
+.bgI .texto h2{
+    font-family: 'Lobster', cursive;
+    font-size: xxx-large;
+}
+
+.bgI .texto p{
+    margin: 4em 0 5em;
+}
+
+.bgI .texto em{
+    text-align: right;
+    display: block;
+    margin-right: 3em;
+}
+
+.bgI .texto .button{
+    border: 1px solid black;
+    background: white;
+    padding: 1.5em 4em;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.bgI .texto .button:hover{
+    background: black;
+    color: white;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.bgI .button .icon{
+    font-size: 18px;
+    margin-inline-end: 1em;
+}
+
+@media only screen and (max-width: 1400px){
+    .bgI .foto img{
+        width: 75%;
+        height: fit-content;
+    }
+
+    .bgI .texto p{
+        margin: 3em 0 4em;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .bgI{
+        background-image: linear-gradient(to top, white 45%,black 20%);
+        height: 100%;
+        padding-top: 5em;
+    }
+
+    .bgI .area{
+        display: block;
+    }
+
+    .bgI .area .foto{
+        width: 96%;
+        margin-inline-start: 2em;
+    }
+
+    .bgI .foto img{
+        width: 65%;
+    }
+
+    .bgI .foto h3{
+        font-size: 28px;
+        margin-right: 3em;
+    }
+
+    .bgI .texto{
+        margin-top: 3em;
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    .bgI .texto h2{
+        font-size: 80px;
+    }
+
+    .bgI .texto p{
+        font-size: 26px;
+        margin: 2em 0 2.5em;
+    }
+
+    .bgI .texto .button{
+        font-size: 20px;
+        padding: 1.2em 3em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .bgI{
+        background-image: linear-gradient(to top, white 47%,black 20%);
+        padding-top: 3em;
+    }
+
+    .bgI .area .foto{
+        margin-inline-start: 1em;
+    }
+
+    .bgI .foto img{
+        width: 75%;
+    }
+
+    .bgI .foto h3{
+        font-size: 14px;
+        margin-right: 1em;
+        letter-spacing: 7px;
+    }
+
+    .bgI .texto{
+        margin-top: 1.5em;
+        padding: 0 1em;
+    }
+
+    .bgI .texto h2{
+        font-size: 50px;
+    }
+
+    .bgI .texto p{
+        font-size: 16px;
+        margin: 2em 0 3em;
+    }
+
+    .bgI .texto .button{
+        font-size: 13px;
+        padding: 1.2em 3em;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .bgI{
+        background-image: linear-gradient(to top, white 48%,black 20%);
+    }
+}

@@ -1,0 +1,16 @@
+#error-page #center{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 90vh;
+}
+
+#center h1{
+    margin-bottom: 1em;
+    font-size: 50px;
+}
+
+#center p{
+    margin: 0.5em auto;
+    font-size: large;
+}

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --navColor: #000;
+    --navColorLight: #5767aa;
+    --secondaryColor: #FFF;
+    --textColor: #eee;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--navColor);
+    color: var(--textColor);
+    position: fixed;
+    z-index: 9;
+}
+
+nav a{
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a.active{
+    color: cornflowerblue;
+    padding-bottom: 3px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+    border-bottom: 2px solid var(--secondaryColor);
+    padding-bottom: 3px;
+    text-shadow: 1px 0px 5px white;
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+header #image{
+    width: 20%;
+    padding: 3rem;
+}
+
+header #image img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px){
+    header #image{
+        padding: 0;
+    }
+
+    header .nav-btn{
+        visibility:visible;
+        display: block;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--navColor);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transform: translateY(-100vh);
+        -webkit-transform: translateY(-100vh);
+        -moz-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+        -o-transform: translateY(-100vh);
+}
+
+    header .responsive_nav{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    header #image{
+        width: 40%;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
