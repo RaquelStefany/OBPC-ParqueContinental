@@ -61,7 +61,7 @@ function Navbar() {
                 >
                     Onde Estamos
                 </Link>
-                <a href="/lideres">
+                <a href="">
                     Líderes
                 </a>
                 <a href="">

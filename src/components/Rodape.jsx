@@ -51,7 +51,7 @@ function Rodape() {
                     </Link>
                 </div>
                 <div>
-                    <a href="/lideres">
+                    <a href="">
                         Líderes
                     </a>
                     <a href="">
