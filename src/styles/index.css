@@ -1,0 +1,5 @@
+html { background: #f8fcfb; }
+body::-webkit-scrollbar { width: 9px; }
+body::-webkit-scrollbar-track { background: #e8f7f5; }
+body::-webkit-scrollbar-thumb { background: #086bb8; border: 2px solid #e8f7f5; border-radius: 9px; }
+::selection { color: #07365f; background: #f3ef45; }
