@@ -6,7 +6,9 @@ import {
   FiChevronUp,
   FiClock,
   FiExternalLink,
+  FiFacebook,
   FiHeart,
+  FiInstagram,
   FiMapPin,
   FiMaximize2,
   FiMenu,
@@ -90,12 +92,6 @@ const departments = [
     description: "O conjunto de Louvor conduz a igreja em momentos de adoração, preparando cada canção com dedicação e sensibilidade espiritual. Seu propósito é servir a Deus e ajudar a congregação a expressar sua fé por meio da música.",
     image: louvorImage,
   },
-  {
-    name: "MÚSICOS",
-    fullName: "Conjunto de Músicos da OBPC",
-    description: "O conjunto de Músicos reúne instrumentistas que colocam seus talentos a serviço da igreja. Com dedicação, unidade e responsabilidade, eles acompanham os louvores e contribuem para cada momento de adoração da congregação.",
-    image: musicosImage,
-  },
 ];
 
 const navItems = [
@@ -105,6 +101,7 @@ const navItems = [
   ["Cultos", "cultos"],
   ["Agenda", "agenda"],
   ["Departamentos", "departamentos"],
+  ["Redes sociais", "redes-sociais"],
   ["Localização", "localizacao"],
 ];
 
@@ -399,6 +396,46 @@ function App() {
                 </div>
               </button>
             ))}
+          </div>
+        </section>
+
+        <section className="social-section section" id="redes-sociais">
+          <div className="social-copy">
+            <span className="eyebrow light">Acompanhe nossa comunidade</span>
+            <h2>A igreja também<br />está nas redes.</h2>
+            <p>Veja um pouco do que vivemos em cada encontro, acompanhe nossas programações e compartilhe conosco momentos de fé, comunhão e adoração.</p>
+
+            <div className="social-profile">
+              <div className="social-avatar"><img src={logo} alt="Logo da OBPC Parque Continental" /></div>
+              <div>
+                <strong>@obpcpqcontinental</strong>
+                <span>O Brasil Para Cristo · Parque Continental</span>
+              </div>
+            </div>
+
+            <div className="social-actions">
+              <a href="https://www.instagram.com/obpcpqcontinental/" target="_blank" rel="noreferrer">
+                <FiInstagram /> Seguir no Instagram <FiExternalLink />
+              </a>
+              <a href="https://www.facebook.com/obpcpqcontinental/" target="_blank" rel="noreferrer">
+                <FiFacebook /> Visitar o Facebook <FiExternalLink />
+              </a>
+            </div>
+          </div>
+
+          <div className="instagram-feature">
+            <div className="instagram-feature-heading">
+              <span><FiInstagram /> Publicação em destaque</span>
+              <a href="https://www.instagram.com/p/Cm0DFZGu_0z/" target="_blank" rel="noreferrer" aria-label="Abrir publicação no Instagram"><FiExternalLink /></a>
+            </div>
+            <div className="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/Cm0DFZGu_0z/embed/"
+                title="Publicação da OBPC Parque Continental no Instagram"
+                loading="lazy"
+                allow="encrypted-media"
+              />
+            </div>
           </div>
         </section>
 

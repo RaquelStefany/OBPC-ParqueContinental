@@ -136,7 +136,7 @@ img { display: block; max-width: 100%; }
 .departments-heading .eyebrow { grid-column: 1 / -1; }
 .departments-heading > p { max-width: 540px; margin: 0 0 4px; color: var(--ink-soft); line-height: 1.8; }
 .department-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
-.department-card { flex: 0 1 calc(25% - 18px); min-width: 245px; padding: 0; overflow: hidden; color: inherit; background: #fff; border: 0; box-shadow: 0 18px 45px rgba(7,54,95,.08); text-align: left; cursor: pointer; transition: transform .3s ease, box-shadow .3s ease; }
+.department-card { flex: 0 1 calc(33.333% - 16px); min-width: 245px; padding: 0; overflow: hidden; color: inherit; background: #fff; border: 0; box-shadow: 0 18px 45px rgba(7,54,95,.08); text-align: left; cursor: pointer; transition: transform .3s ease, box-shadow .3s ease; }
 .department-card:hover { transform: translateY(-7px); box-shadow: 0 25px 55px rgba(7,54,95,.15); }
 .department-image { height: 290px; position: relative; overflow: hidden; }
 .department-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 42%, rgba(4,52,95,.72)); }
@@ -165,6 +165,30 @@ img { display: block; max-width: 100%; }
 .modal-copy small { margin-top: 40px; color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 @keyframes modal-fade { from { opacity: 0; } }
 @keyframes modal-enter { from { opacity: 0; transform: translateY(24px) scale(.98); } }
+
+.social-section { display: grid; grid-template-columns: minmax(0,.85fr) minmax(420px,.65fr); align-items: center; gap: clamp(60px,9vw,150px); color: #fff; background: linear-gradient(135deg, #031f3a, var(--blue-dark) 58%, #075c9e); }
+.social-copy h2 { color: #fff; }
+.social-copy > p { max-width: 590px; margin: 32px 0 38px; color: rgba(255,255,255,.7); font-size: 16px; line-height: 1.85; }
+.social-profile { padding: 22px 0; display: flex; align-items: center; gap: 18px; border-top: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14); }
+.social-avatar { width: 68px; height: 68px; flex: none; padding: 8px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, var(--cyan), var(--blue)); border: 2px solid var(--yellow); border-radius: 50%; }
+.social-avatar img { width: 100%; height: 100%; object-fit: contain; }
+.social-profile > div:last-child { min-width: 0; display: grid; gap: 5px; }
+.social-profile strong { font-size: 17px; overflow-wrap: anywhere; }
+.social-profile span { color: rgba(255,255,255,.55); font-size: 12px; }
+.social-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+.social-actions a { min-height: 54px; padding: 0 18px; display: inline-flex; align-items: center; gap: 10px; color: var(--blue-dark); background: var(--yellow); border-radius: 3px; text-decoration: none; font-size: 12px; font-weight: 700; transition: transform .25s ease, background .25s ease; }
+.social-actions a:nth-child(2) { color: #fff; background: var(--blue); border: 1px solid rgba(255,255,255,.24); }
+.social-actions a svg:last-child { margin-left: 5px; opacity: .7; }
+.social-actions a:hover { transform: translateY(-3px); background: #fff; }
+.social-actions a:nth-child(2):hover { background: #1479c2; }
+.instagram-feature { min-width: 0; padding: 14px; color: var(--ink); background: #fff; box-shadow: 0 28px 75px rgba(0,0,0,.28); }
+.instagram-feature-heading { min-height: 54px; padding: 0 7px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.instagram-feature-heading span { display: flex; align-items: center; gap: 10px; color: var(--blue-dark); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.instagram-feature-heading span svg { color: var(--green); font-size: 20px; }
+.instagram-feature-heading a { width: 38px; height: 38px; display: grid; place-items: center; color: var(--blue); border-radius: 50%; }
+.instagram-feature-heading a:hover { background: var(--cream); }
+.instagram-embed { width: 100%; height: 650px; overflow: hidden; background: #f5f5f5; }
+.instagram-embed iframe { width: 100%; height: 100%; display: block; border: 0; }
 
 .location { margin: 0 clamp(18px,3vw,45px) clamp(18px,3vw,45px); padding: 0; min-height: 640px; display: grid; grid-template-columns: .85fr 1.15fr; color: #fff; background: linear-gradient(145deg, var(--green-dark), var(--green)); }
 .location-content { padding: clamp(55px,7vw,105px); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
@@ -220,6 +244,8 @@ img { display: block; max-width: 100%; }
   .department-modal-panel { grid-template-columns: 1fr; overflow-y: auto; }
   .modal-photo { min-height: 0; height: min(52vh, 500px); }
   .modal-copy { padding: 44px; }
+  .social-section { grid-template-columns: 1fr; }
+  .instagram-feature { width: min(100%, 560px); justify-self: center; }
   .location { grid-template-columns: 1fr; }
   .location-photo { min-height: 450px; }
 }
@@ -258,6 +284,10 @@ img { display: block; max-width: 100%; }
   .modal-copy p { font-size: 15px; line-height: 1.75; }
   .modal-copy small { margin-top: 28px; }
   .modal-close { right: 12px; top: 12px; width: 42px; height: 42px; }
+  .social-actions { flex-direction: column; }
+  .social-actions a { width: 100%; justify-content: center; }
+  .instagram-feature { padding: 8px; }
+  .instagram-embed { height: 600px; }
   .location { margin: 0 12px 12px; }
   .location-content { padding: 65px 28px; }
   .location-photo { min-height: 350px; }
