@@ -22,7 +22,7 @@ import heroImage from "../assets/img/inicio.webp";
 import churchImage from "../assets/img/QuemSomos2.png";
 import churchImageTwo from "../assets/img/fotoIgreja.png";
 import ufebracImage from "../assets/img/conjuntos/ufebrac.png";
-import umasbracImage from "../assets/img/cultos/4.png";
+import umasbracImage from "../assets/img/conjuntos/umasbrac.png";
 import jubracImage from "../assets/img/conjuntos/jovens.png";
 import menibracImage from "../assets/img/cultos/8.png";
 import louvorImage from "../assets/img/conjuntos/louvor.png";
